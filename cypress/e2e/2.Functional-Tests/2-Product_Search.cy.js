@@ -1,5 +1,5 @@
 describe('test',()=>{
-    it('passes',()=>{
+    it('Product Search',()=>{
         cy.visit('/')
         cy.fixture('product').then((pro)=>{
             cy.get('input#small-searchterms').click().type(pro.product1)
